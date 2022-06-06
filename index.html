@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Recycling</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__box">
+                <div class="logo">
+                    <a class="logo__link" href="/">
+                        <img class="logo__img" src="img/logo.svg" alt="">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <a href="#" class="menu__btn">
+                        <span class="menu__btn-element"></span>
+                    </a>
+                    <ul class="menu__list">
+                        <a href="#" class="menu__btn menu__btn--close">
+                            <span class="menu__btn-element menu__btn-element_close"></span>
+                        </a>
+                        <li class="menu__list__items scrollto">
+                            <a class="menu__link" href="#about">About Us</a>
+                        </li>
+                        <li class="menu__list__items scrollto">
+                            <a class="menu__link" href="#recycling">Our Recycling Facility</a>
+                        </li>
+                        <li class="menu__list__items scrollto">
+                            <a class="menu__link" href="#advantage">Our Advantage</a>
+                        </li>
+                        <li class="menu__list__items scrollto">
+                            <a class="menu__link" href="#process">Our Process</a>
+                        </li>
+                        <li class="menu__list__items scrollto">
+                            <a class="menu__link" href="#contacts">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__link" href="tel:0439203788">
+                    <p class="header__link__content">0439203788</p>
+                    <div class="header__link__circle">
+                        <svg class="header__link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
+                            <path d="M20.2514 16.3465L20.1535 16.0513C19.9215 15.3618 19.1611 14.6426 18.4625 14.4531L15.8769 13.7468C15.1758 13.5561 14.1756 13.8126 13.6626 14.3255L12.7269 15.2613C9.32613 14.3423 6.65944 11.6756 5.74175 8.27549L6.67754 7.3397C7.19054 6.8267 7.447 5.82785 7.25624 5.12669L6.55121 2.53988C6.36046 1.84001 5.63996 1.07959 4.95171 0.850143L4.65657 0.750909C3.967 0.521466 2.98357 0.753507 2.47062 1.26646L1.07086 2.66749C0.820799 2.91624 0.660978 3.62771 0.660978 3.6303C0.61202 8.07439 2.3546 12.3561 5.49816 15.4997C8.63401 18.6355 12.8996 20.3755 17.3308 20.3382C17.354 20.3382 18.0861 20.1809 18.3361 19.9321L19.7359 18.5324C20.2488 18.0194 20.4808 17.0361 20.2514 16.3465Z" fill="white"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="wrapper">
+            <div class="hero__box">
+                <h1 class="section-head section-head--white">We buy old, smashed and unwanted cars in any condition for the best price in Melbourne</h1>
+                <p>Get the best possible deal on your unwanted old or smashed car and avoid wasting time searching for the best price. We pay top dollar because we don’t use middle men and recycle your car at our own purpose built facility here in Melbourne. We can give you a quote over the phone and pick up the car and pay you all on the same day!</p>
+            </div>
+            <form class="hero__form" action="#" method="post">
+                <span for="" class="form__title">Urgent car valuation</span>
+                <input class="form__text" type="text" name="fullname" id="fullname" placeholder="Full Name">
+                <input class="form__text" type="tel" name="phone" id="phone" placeholder="Phone number">
+                <textarea class="form__textarea" name="note" id="note" cols="30" rows="40" placeholder="Note"></textarea>
+                <button class="form__btn" type="submit">
+                    <p class="form__btn__content">Calculate</p>
+                    <svg class="form__btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 24">
+                        <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5H33V10.5H2V13.5Z"></path>
+                    </svg>
+                </button>
+                <div class="form__error error" id="hero-error"></div>
+            </form>
+            <div class="hero__diler">
+                <img src="img/dealer.png" alt="">
+            </div>
+        </div>
+        <img class="hero__traid" src="img/tread.png" alt="">
+    </section>
+    <section class="about" id="about">
+        <div class="wrapper">
+            <img class="about__img" src="img/about-us.png" alt="">
+            <div class="about__box">
+                <div class="about__item">
+                    <h2 class="section-head section-head--about-bottom">About Us</h2>
+                    <svg class="about__box__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223 8">
+                        <path d="M98 7V1L1 1.75V3.91667L98 7Z" fill="black" stroke="black"></path>
+                        <path d="M125 7V1L222 1.75V3.91667L125 7Z" fill="black" stroke="black"></path>
+                    </svg>
+                </div>
+                <div class="about__content">
+                    <p>AGP Recycling is a family-owned business that has been around since 2012. We specialize in recycling old and damaged cars in a safe and environmentally friendly manner. Give us a call today to find out how much your old or damaged car is worth. We will get back to you the same day, and if you are happy with our offer, your car will be picked up within a day and you will get paid straight away.</p>
+                    <a class="about__link" href="#">
+                        <p>What's My Best Price</p>
+                        <svg class="form__btn__icon form__btn__icon--white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 24">
+                            <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5H33V10.5H2V13.5Z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="recycling" id="recycling">
+        <div class="wrapper">
+            <h2 class="section-head">Our Recycling Facility</h2>
+            <p>Our purpose built recycling facility is located here in Melbourne’s west</p>
+            <div class="recycling__box">
+                <div class="recycling__box__items--sizer"></div>
+                <div class="recycling__box__items recycling__box__items--width1">
+                    <div class="recycling__box__cover" style="background-image: url(img/recycling-1.jpg)">
+                        <div class="recycling__box__title recycling__box__title--first">
+                            <span>01</span>
+                            <p>Based in Melbourne</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recycling__box__items recycling__box__items--width2">
+                    <div class="recycling__box__cover recycling__box__cover--height" style="background-image: url(img/recycling-2.jpg)">
+                        <div class="recycling__box__title recycling__box__title--lh">
+                            <span>02</span>
+                            <p>environmentally friendly recycling process</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recycling__box__items recycling__box__items--width3">
+                    <div class="recycling__box__cover recycling__box__cover--height2" style="background-image: url(img/recycling-3.jpg)">
+                        <div class="recycling__box__title recycling__box__title--lh">
+                            <span>03</span>
+                            <p>Creating local jobs </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recycling__box__items recycling__box__items--width4">
+                    <div class="recycling__box__cover recycling__box__cover--height2" style="background-image: url(img/recycling-4.jpg)">
+                        <div class="recycling__box__title">
+                            <span>04</span>
+                            <p>Twelve years in business</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recycling__box__items recycling__box__items--width5">
+                    <div class="recycling__box__cover recycling__box__cover--height3" style="background-image: url(img/recycling-5.jpg)">
+                        <div class="recycling__box__title recycling__box__title--lh">
+                            <span>05</span>
+                            <p>we work with no middle men to give you the best price </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cost">
+        <div class="wrapper">
+            <img class="cost__box__img" src="img/cost-recycling.png" alt="">
+            <div class="cost__box">
+                <div class="cost__box__items">
+                    <h2 class="section-head section-head--white">Find out the cost of buying a car</h2>
+                    <form action="#" class="cost__form">
+                        <div class="cost__form__items">
+                            <input class="form__text form__text--mb" type="text" name="costname" id="costname" placeholder="Name">
+                            <input class="form__text form__text--mb" type="text" name="costemail" id="costemail" placeholder="E-mail">
+                            <input class="form__text form__text--mb" type="text" name="costecar" id="costecar" placeholder="Make a car">
+                        </div>
+                        <div class="cost__form__items">
+                            <input class="form__text form__text--mb" type="text" name="costyear" id="costyear" placeholder="Year of issue">
+                            <input class="form__text form__text--mb" type="tel" name="costphone" id="costphone" placeholder="Phone number">
+                            <input class="form__text form__text--mb" type="text" name="costenote" id="costenote" placeholder="notebook">
+                            <button class="form__btn form__btn--mt" type="submit">
+                                <p class="form__btn__content">What's My Best Price</p>
+                                <svg class="form__btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 24">
+                                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5H33V10.5H2V13.5Z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form__error error" id="cost-error"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="benefits" id="advantage">
+        <img class="benefits__img" src="img/tread-2.png" alt="">
+        <div class="wrapper">
+            <div class="benefits__box">
+                <div class="benefits__box__items">
+                    <h2 class="section-head section-head--right">Six Reasons why we are the best in the business</h2>
+                    <a class="about__link about__link--mt" href="#">
+                        <p>What's My Best Price</p>
+                        <svg class="form__btn__icon form__btn__icon--white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 24">
+                            <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5H33V10.5H2V13.5Z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="benefits__box__items">
+                    <div class="feature__box">
+                        <div class="feature__box__items">
+                            <div class="feature__box__cover feature__box__cover--one">
+                                <div class="feature__box__number">01</div>
+                                <div class="feature__box__title">We’ve been in business since 2012</div>
+                            </div>
+                        </div>
+                        <div class="feature__box__items">
+                            <div class="feature__box__cover feature__box__cover--two">
+                                <div class="feature__box__number">02</div>
+                                <div class="feature__box__title">We give you the best price</div>
+                            </div>
+                        </div>
+                        <div class="feature__box__items">
+                            <div class="feature__box__cover feature__box__cover--three">
+                                <div class="feature__box__number">03</div>
+                                <div class="feature__box__title">Our process is fast and transparent</div>
+                            </div>
+                        </div>
+                        <div class="feature__box__items">
+                            <div class="feature__box__cover feature__box__cover--four">
+                                <div class="feature__box__number">04</div>
+                                <div class="feature__box__title">Our recycling process leaves nothing to waste</div>
+                            </div>
+                        </div>
+                        <div class="feature__box__items">
+                            <div class="feature__box__cover feature__box__cover--five">
+                                <div class="feature__box__number">05</div>
+                                <div class="feature__box__title">Our recycling process is environmentally friendly</div>
+                            </div>
+                        </div>
+                        <div class="feature__box__items">
+                            <div class="feature__box__cover feature__box__cover--six">
+                                <div class="feature__box__number">06</div>
+                                <div class="feature__box__title">We are a family business</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="process" id="process">
+        <div class="wrapper">
+            <h2 class="section-head">Our Process</h2>
+            <div class="process__box process__box--one">
+                <img class="process__img process__img--one-pr" src="img/process__img-1.png" alt="">
+                <div class="process__content process__content--one">
+                    <h3 class="section-head">Get an Instant Offer on your Car</h3>
+                    <p>Send us a quick note or give us a call and we will give you a quote within an hour</p>
+                </div>
+            </div>
+            <div class="process__box process__box--two">
+                <div class="process__content process__content--two">
+                    <h3 class="section-head">We’ll pick up your car on the same day</h3>
+                    <p>Once you accept our offer, we will organize to pick up your car same day from any location in metropolitan Melbourne</p>
+                </div>
+                <img class="process__img process__img--two-pl" src="img/process__img-2.png" alt="">
+            </div>
+            <div class="process__box">
+                <img class="process__img process__img--one-pr" src="img/process__img-3.png" alt="">
+                <div class="process__content process__content--three">
+                    <h3 class="section-head">Get paid on the same day</h3>
+                    <p>We handle all the paperwork and you get paid straight away. No delays, no hassles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="wrapper">
+            <h2 class="section-head">Frequently asked questions</h2>
+            <div class="questions__box">
+                <div class="questions__box__items">
+                    <div class="questions__box__items__content">
+                        <div class="questions__box__items__head">
+                            <div class="questions__link" id="questions">What if my car isn’t registered at the moment? Will you still be interested in it?</div>
+                            <div class="questions__icon">+</div>
+                        </div>
+                        <div class="questions__content" id="1questions">
+                            <p>No current registration? No worries! As long as you are the owner of the car and it’s not wanted by police or a finance company, you can give us a call and we will take it off your hands happily and pay you a good price for it!</p>
+                        </div>
+                    </div>
+                    <div class="questions__box__items__content">
+                        <div class="questions__box__items__head">
+                            <div class="questions__link" id="questions2">Do you also pick up other metal items like fridge or BBQ</div>
+                            <div class="questions__icon">+</div>
+                        </div>
+                        <div class="questions__content" id="1questions2">
+                            <p>No current registration? No worries! As long as you are the owner of the car and it’s not wanted by police or a finance company, you can give us a call and we will take it off your hands happily and pay you a good price for it!</p>
+                        </div>
+                    </div>
+                    <div class="questions__box__items__content">
+                        <div class="questions__box__items__head">
+                            <div class="questions__link" id="questions3">Do I need to inform VicRoads about the sale of my car</div>
+                            <div class="questions__icon">+</div>
+                        </div>
+                        <div class="questions__content" id="1questions3">
+                            <p>No current registration? No worries! As long as you are the owner of the car and it’s not wanted by police or a finance company, you can give us a call and we will take it off your hands happily and pay you a good price for it!</p>
+                        </div>
+                    </div>
+                    <div class="questions__box__items__content">
+                        <div class="questions__box__items__head">
+                            <div class="questions__link" id="questions4">What if the car is located in country Victoria</div>
+                            <div class="questions__icon">+</div>
+                        </div>
+                        <div class="questions__content" id="1questions4">
+                            <p>No current registration? No worries! As long as you are the owner of the car and it’s not wanted by police or a finance company, you can give us a call and we will take it off your hands happily and pay you a good price for it!</p>
+                        </div>
+                    </div>
+                    <div class="questions__box__items__content">
+                        <div class="questions__box__items__head">
+                            <div class="questions__link" id="questions5">Is there an age limit for the car?</div>
+                            <div class="questions__icon">+</div>
+                        </div>
+                        <div class="questions__content" id="1questions5">
+                            <p>No current registration? No worries! As long as you are the owner of the car and it’s not wanted by police or a finance company, you can give us a call and we will take it off your hands happily and pay you a good price for it!</p>
+                        </div>
+                    </div>
+                    <div class="questions__box__items__content">
+                        <div class="questions__box__items__head">
+                            <div class="questions__link" id="questions6">What if the car is missing any parts like wheels or engine or seats?</div>
+                            <div class="questions__icon">+</div>
+                        </div>
+                        <div class="questions__content" id="1questions6">
+                            <p>No current registration? No worries! As long as you are the owner of the car and it’s not wanted by police or a finance company, you can give us a call and we will take it off your hands happily and pay you a good price for it!</p>
+                        </div>
+                    </div>
+                    <div class="questions__box__items__content">
+                        <div class="questions__box__items__head">
+                            <div class="questions__link" id="questions7">What if the car has a yellow sticker attached by the local council?</div>
+                            <div class="questions__icon">+</div>
+                        </div>
+                        <div class="questions__content" id="1questions7">
+                            <p>No current registration? No worries! As long as you are the owner of the car and it’s not wanted by police or a finance company, you can give us a call and we will take it off your hands happily and pay you a good price for it!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions__box__items">
+                    <a class="questions__box__items__link" href="tel:">
+                        <svg class="questions__box__items__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+                            <path d="M42.8065 34.2741L42.5925 33.6292C42.0856 32.1225 40.4241 30.5511 38.8977 30.1371L33.2484 28.5939C31.7164 28.1771 29.5311 28.7375 28.4102 29.8583L26.3656 31.9029C18.9352 29.8951 13.1086 24.0683 11.1035 16.6393L13.1481 14.5946C14.269 13.4737 14.8294 11.2913 14.4126 9.75928L12.8721 4.10721C12.4553 2.57801 10.881 0.916517 9.37726 0.415194L8.73238 0.198372C7.22571 -0.302951 5.07695 0.204049 3.95616 1.32484L0.897765 4.38603C0.351384 4.92953 0.00217928 6.48406 0.00217928 6.48973C-0.10479 16.1999 3.70266 25.5551 10.5712 32.4238C17.4229 39.2755 26.7431 43.0774 36.4251 42.9957C36.4757 42.9957 38.0753 42.6521 38.6217 42.1085L41.6801 39.0501C42.8009 37.9294 43.3078 35.7807 42.8065 34.2741Z" fill="white"></path>                        
+                        </svg>
+                    </a>
+                    <div class="questions__box__circle">
+                        <img class="questions__img" src="img/questions-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="contacts">
+        <div class="wrapper">
+            <img class="footer__img" src="img/footer-tread.png" alt="">
+            <div class="footer__box">
+                <div class="footer__box__items">
+                    <img class="footer__logo" src="img/logo-footer.svg" alt="">
+                    <a class="footer__info" href="tel:0439203788">0439203788</a>
+                    <a class="footer__info" href="mailto:agprecycling@qmail.com???">agprecycling@qmail.com???</a>
+                    <address class="footer__info">2-8 Cook Street, Sunshine West, 3020</address>
+                </div>
+                <div class="footer__box__items">
+                    <h5 class="footer__title">Remain questions?</h5>
+                    <form class="form__footer" action="#">
+                        <input class="form__text form__text--w100" type="text" name="footername" id="footername" placeholder="Full Name">
+                        <input class="form__text form__text--w100" type="tel" name="footerphone" id="footerphone" placeholder="Phone number">
+                        <input class="form__text form__text--w100" type="email" name="footeremail" id="footeremail" placeholder="Email">
+                        <input class="form__text form__text--w100" type="text" name="footerquestion" id="footerquestion" placeholder="Question">
+                        <button class="form__btn" type="submit">
+                            <p class="form__btn__content">Send</p>
+                            <svg class="form__btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 24">
+                                <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5H33V10.5H2V13.5Z"></path>
+                            </svg>
+                        </button>
+                        <div class="form__error error" id="footer-error"></div>
+                    </form>
+                </div>
+                <div class="footer__box__items">
+                    <ul class="footer__list">
+                        <li class="footer__list__items">
+                            <a class="footer__list__link" href="#about">About Us</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__link" href="#recycling">Our Recycling Facility</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__link" href="#advantage">Our Advantage</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__link" href="#process">Our Process</a>
+                        </li>
+                    </ul>
+                    <div class="social__box">
+                        <a class="social__box__link" href="#">
+                            <svg class="social__icon social__box__link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35">
+                                <path d="M17.5 12.8496C14.9345 12.8496 12.8508 14.9298 12.8508 17.4999C12.8508 20.0689 14.9357 22.1514 17.5 22.1514C20.0655 22.1514 22.1515 20.0689 22.1515 17.4999C22.1515 14.9298 20.0655 12.8496 17.5 12.8496ZM17.5 20.5403C15.8153 20.5403 14.4585 19.1788 14.4585 17.4999C14.4585 15.8211 15.8153 14.4596 17.5 14.4596C19.1672 14.4596 20.5415 15.8211 20.5415 17.4999C20.5415 19.1788 19.1847 20.5403 17.5 20.5403Z" fill="#D11D11"></path>
+                                <path d="M22.6158 11.1487C22.0173 11.1487 21.5425 11.6247 21.5425 12.2232C21.5425 12.8205 22.0173 13.2953 22.6158 13.2953C23.2143 13.2953 23.6903 12.8205 23.6903 12.2232C23.6903 11.6247 23.2132 11.1487 22.6158 11.1487Z" fill="#D11D11"></path>
+                                <path d="M17.5023 0.175049C7.93099 0.175049 0.173828 7.92988 0.173828 17.5C0.173828 27.0679 7.93099 34.825 17.5023 34.825C27.0678 34.825 34.8273 27.069 34.8273 17.5C34.8273 7.92988 27.0678 0.175049 17.5023 0.175049ZM26.4437 21.3092C26.4437 24.136 24.1348 26.4437 21.2917 26.4437H13.7083C10.864 26.4437 8.55516 24.1349 8.55516 21.3267V13.6897C8.55516 10.864 10.8628 8.55638 13.7083 8.55638H21.2917C24.136 8.55638 26.4437 10.864 26.4437 13.6897V21.3092Z" fill="#D11D11"></path>
+                            </svg>
+                        </a>
+                        <a class="social__box__link" href="#">
+                            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35">
+                                <path d="M35 17.5C35 27.164 27.1651 35 17.5022 35C7.8349 35 0 27.164 0 17.5C0 7.83376 7.8349 0 17.5022 0C27.1651 0 35 7.83376 35 17.5ZM14.5783 28.4375H19.1203V17.5074H22.1864L22.5833 13.6465H19.1203V11.3757C19.1203 10.5243 19.6867 10.3247 20.0836 10.3247H22.5274V6.57576L19.163 6.5625C15.4275 6.5625 14.5783 9.35838 14.5783 11.1467V13.6465H12.4181V17.5074H14.5783V28.4375Z" fill="#D11D11"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
